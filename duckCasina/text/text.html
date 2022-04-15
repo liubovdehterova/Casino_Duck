@@ -1,0 +1,1132 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__main">
+            <div class="header__main__left">
+                <div class="header__main__left__logo">
+                    <a href="#" class="header__main__left__logo__link">
+                        <img src="../logo/logo.svg" alt="" class="header__main__left__logo__link__static">
+                        <img src="../logo/logo-flow-2.webp" alt="" class="header__main__left__logo__link__hover">
+                    </a>
+                </div>
+                <div class="header__main__left__menu">
+                    <nav class="header__main__left__menu__nav">
+                        <ul class="header__main__left__menu__nav__list">
+                            <li class="header__main__left__menu__nav__list__inner">
+                                <a href="#" class="header__main__left__menu__nav__list__inner__link">
+                                    <img src="data:image/png;base64,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">
+                                    Games
+                                </a>
+                            </li>
+                            <li class="header__main__left__menu__nav__list__inner">
+                                <a href="#" class="header__main__left__menu__nav__list__inner__link">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAADEklEQVRIie3WT2gcVRzA8e9vdmY3gpGkgiCxp1bEW0CoEloPigf/VOvBaLYFWSs7CfRilWa3Ksyhzc4i7cVqOlPbQUh2axSsBoyIeLEKFlpvgm1PEit4SFMU3dnsvp+H7IptlmR27Un7u8yf9/u9z7yZeW8GbsV/PaTbgqPvzW2Km415wBTd7I5eYaub5PLJk/0101gARoDt6+VOhTNPeXNz6X8Ne1HUZ1ZuOyPKto1y/aCyXdT6pO9q47tD71Q39wwHQeBk6pkPEB5Jki9G68BlheGUrd90wjeEPc+zlrQ/Ap5OgnpR1Dc5sftcnI4fRPka2Gzb+umNt31dWFUlffd9xxB2J0HLJ07fn6lnLvvHKzu9XG5ZxN4JXFQYzlxtFhPDpbA6JehEEhRAm82XgCEVPvbD048X3NFrAntbrftL784OroH9oPpkKagsloKKts8JFJKiAJNu9gBwGEihpjJ17P07C272LPAlcAcpnlsDK3ocGOoGaseh6bkhP6iUwzC0C/mxN0G/UBiQtJNf7ZuZ1ZFYT6yBgXt6QQFS0nhb4cAS/SURUUgdaYG7AGzVbwFQHe4E9xwiHG3tvgigK/H5VYitAPYfzmKr/a6bChtLul56b86Im/pKazcCECfzAIDAJYDa7aa9gPzaCV6kx7Ac2afgb+K311VVVMxrLfjM6rY50jr+vl1j/33VYuVVTUgPL9nk3rErQFFVxQ+qh0V4TGA5nbJDAFH2KGBEPlsDF/IvLADXrakKfjdz2Q+rbyG8CjRVGdv/8ujS1InqDjX6KHCt7tQ+bOeu+4yL+bGDikwnhVXNKeCKKM8Wx7Ofe1E0IIZTrdYjXi63nAgWEa3/8uM+lNkk8MHxPT/E6XhLYTw770XRQKaemQfdKuiFeNApX9d3kg6DIHCW6P+IG75QRTfbsb48PbvNWDID3Av6U9M4I29MjP78z5xE08l13ZU4HT+P8lWSfLUkDWwR9EInNDEM4OVyNcv5c5cK5zbKLbjZsyrmmUF+f6gTCj3+7NVMY0EMcXE8+3C39bfi/xN/Aa4UKDz8Ta4rAAAAAElFTkSuQmCC">
+                                    Promos
+                                </a>
+                            </li>
+                            <li class="header__main__left__menu__nav__list__inner">
+                                <a href="#" class="header__main__left__menu__nav__list__inner__link">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAB/ElEQVRIie2Vv2sTcRjGP+/XSNpksM3aQaHF3cWhCG6CRqxQPEiCjom1WpxsLwp1kJ7TjUpKoTq0gUyJVNF/QLCL7jopFIdGwYgQ8+N1uEt7SS6NQ12kz/S+7z3v87zv93vcwRGGQDqBU9jUwxS2c2kBMIHaz0PU/9EJIoHiDnBaVZP5m5lXzmqxjOqMiszks6kXYSorq8UrolpBpGJnU1cfF4pJRbd8LXo20HcARuS8l2rVf3Bi0Jim3R4LchX1eoXtPgNVyh6JzMP19RGg6olwcpABRk75UdV1S6NA2kul3GcwlTheAfkETER/R++ov6aKDjRQ9cwVdurx5m1gAvg4OXZs70j3DCzLaqliexuSN8quH08O3ACmAIyyK5D3THXJsqxWhyC9HU5hcwtIAm+BadBf8fp4YmHhUj3Ic93SaD3e/AaM7HN5aefSl4O84GvqO0ZuATW/AZBYLfp9upfXiDXP+eL43FqrKXO9vD6DpZz1WWCl29Rc6+W1hNlgrvDowXzqy1ADANOMPOs20BvOk43xTu6ulRKCXu8yMDwP04qEFe/NW1/x78cpbLwBuYCRZeAuQL3VWAaJAa/tXPpimMb+cEPgPC2eweh2yDCNtujZ+9nMh4P6Q48oCHsu9V6VxZDZFoeJ/x848A7+9h/R+faHYegdHOGf4w8nMqRBdiqMOAAAAABJRU5ErkJggg==">
+                                    Tournaments
+                                </a>
+                            </li>
+                            <li class="header__main__left__menu__nav__list__inner">
+                                <a href="#" class="header__main__left__menu__nav__list__inner__link">
+                                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 512 512"
+                                         style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <path fill="currentColor"
+                                              d="M255.9-0.4c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S397.3-0.4,255.9-0.4z M140.3,383.3 c3.4-13.2,17.5-24.4,28.6-31.5l7.5-4.5c13-7.3,27.2-12.7,42.1-16.1c14.6-3.3,26.2-3.8,31.8-3.8c2.2,0,3.4,0.1,3.5,0.1l0.9,0.1 l0.1,0l0.1,0l0.9-0.1l0,0c0.3,0,1.5-0.1,3.4-0.1c5.5,0,16.8,0.5,31.2,3.8c16.4,3.8,32,10.1,46.2,18.7l6.7,4.3 c13.4,9.2,22,19,24.7,28.3c1.1,3.6,1,6.4,0.8,7.9c-0.4,0.1-0.9,0.2-1.7,0.2c-1.9,0-6.1-0.5-13.3-4.2l-8.3-4.4 c-27.2-14.6-53-28.3-89.5-28.3c-35.3,0-64.1,13.4-88.3,25.9l-12.1,6.3c-7.3,3.9-11.8,4.7-14.2,4.7c-0.8,0-1.3-0.1-1.7-0.2 C139.6,389,139.5,386.6,140.3,383.3z M140.2,345.1c0.1-0.5,0.2-0.9,0.3-1.4c1.5-6.3,5.9-11.5,11.9-14.2c2.6-1.1,5.6-1.7,9-1.7 c1,0,2.1,0.1,3.2,0.2l0.1,0l-2.8,1.6l-0.1,0.1c-1.9,1.1-3.4,2.1-4.9,3C150.6,336.6,145,340.8,140.2,345.1z M332,309.9 c-0.4,0.1-0.8,0.2-1.1,0.4c-5.5,1.8-10.1,3.9-13.3,5.5c-26.9-9.9-49.8-11-58.4-11c-2.1,0-3.7,0.1-4.4,0.1c-0.8,0-2.3-0.1-4.5-0.1 c-8.1,0-29.7,0.9-55.1,9.6c-3.3-1.7-8.2-4-14.1-5.9c-0.3-0.1-0.6-0.2-0.9-0.3c-0.2-16.8-0.5-35.1-0.8-52.7l0-0.4l0-0.1 c-0.5-29.9-1-58.2-1-81.6c0-33.5,5.4-55.2,17-68.3c11.6-13.1,31-19.3,61.2-19.3c21.4,0,43.1,1.9,56.7,15.5 c13.2,13.3,19.5,37.6,19.2,74.3l-0.1,13.1C331.8,236.2,331.4,273.9,332,309.9z M347.2,329.9l0.7-0.1c0.9-0.1,1.8-0.1,2.7-0.1 c3.4,0,6.5,0.6,9.1,1.7c6,2.7,10.4,7.8,11.9,14.2c0.2,1,0.4,1.9,0.5,2.9c-5.6-5.5-12.4-10.8-20.3-15.8L347.2,329.9z M310.4,389.6 c-1.6,0.5-3.1,0.9-4.8,1.3c-11.1,2.9-29,6.3-50.8,6.3c-19,0-37.6-4.8-51.1-9.4c24.4-10,40.1-11.4,52.4-11.4 C278,376.4,295.7,382.8,310.4,389.6z M165.6,454.5c6.6-22.9,10.3-41.9,12.1-52.5c13.6,6.2,44,17.9,77.1,17.9 c24.3,0,44.1-3.8,56.5-7c9.6-2.5,18.3-5.5,24.8-8.6c0.1,1.6,0.2,3.1,0.3,4.7c1.2,15.9,3.7,30.9,7.5,45.8c0.2,0.7,0.3,1.5,0.3,2.2 c-27.1,11.9-57,18.6-88.5,18.6c-32.3,0-63-7-90.6-19.5C165.4,455.5,165.5,455,165.6,454.5z M365.3,446.4c-2.7-11-4.6-22.2-5.7-33.9 c2.6,0.5,5.2,0.8,7.6,0.8c13.2,0,20.3-8,22.3-12.8c0.5-1.2,5-12.2-0.9-27.8c5.9-9.6,7.7-21.4,5-32.5c-3.2-13.2-12.2-24-24.8-29.6 c-4.3-1.9-9.1-3.1-14.2-3.5c-0.5-35.3-0.2-72,0.3-118.2l0-0.1l0.1-13c0.4-43-8-72.6-25.7-90.4c-19.4-19.6-46.4-22.3-72.8-22.3 c-37.2,0-62,8.6-78.2,27c-15.4,17.5-22.6,44-22.6,83.3c0,23.7,0.5,52.1,1,82.1l0,0.1c0.3,16.5,0.6,33.6,0.8,49.7 c-5.1,0.4-10,1.6-14.4,3.5c-12.5,5.5-21.6,16.3-24.8,29.6c-2.5,10.2-1.2,20.7,3.5,29.9c-8.6,17.9-3.4,30.9-2.8,32.4 c2.1,4.7,9.1,12.8,22.3,12.8c3.6,0,7.4-0.6,11.4-1.8c-1.8,8.7-4.4,20.4-8.2,33.7c-65-38.3-108.8-109-108.8-189.7 c0-121.3,98.7-220,220-220s220,98.7,220,220C475.9,337.1,431.3,408.4,365.3,446.4z"></path>
+                                        <ellipse fill="currentColor" cx="230.1" cy="258.7" rx="11.3"
+                                                 ry="25.7"></ellipse>
+                                        <ellipse fill="currentColor" cx="280.1" cy="258.7" rx="11.3"
+                                                 ry="25.7"></ellipse>
+                                    </g>
+                                </svg>
+                                    Coins
+                                </a>
+                            </li>
+                            <li class="header__main__left__menu__nav__list__inner">
+                                <a href="#" class="header__main__left__menu__nav__list__inner__link">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAG8UlEQVRoge2ZbXBU1RnHf8/Zm2wClNc6U1TGCghSUWnHQu2HaKcDU6xORe0aAmaGSZMFbOlAlby00GvlJaBmphktWQTjACF0h6FkCtWiDO1Yp0CF+jLqWAnUSoF2bAPKS3b33vv0w2bj5mU3m8AuzJTfl915nufc8//PPffcc86Fq1zlKumQS3WhFc81j7Hy9E5V7hBkHOhYhaHAkI6Ss8AZQY6BHlH0DWP0z5Xlc49fiv4vysjqDZvH41qloLOAySnKznT8DkuRf0eV34jlbq7+wSNHBqplQEZqG5qKPKRGhOmAARQ4LPAaogfUNR9ECtqP2fPmnU5uZzc2Ds+LFo416k0EpiEUAV/tSHvAHoGVVcGSP2XVSPwOmHqQmR3Nj6gQMuoLVwUD/+hv5wArNjTd4HMloBAUGNcR3u3D/HhpsLg10+tkZERVZXWoebEIK4BC4D1EflZVXrxTRHQA+ntg27bxXzthFsqTwCTQ8yLUVJaX1GfSR59G7OfCQ/yW8yLwIOh5VVk2fqT1y0Ag4F4KAz36s/dZ/tEnFwNPAIUibG+PWfPsRwNn07VLa6RuQ3hku+e8JMpU4D3jug9ULnzkg0uoOyVrnt82yfO8HcDNwAFcnVm9cE5bqnqTKmHXbxkadZ29okxV4RVjXfhGrkwAVJYXv2+sC1MF3QtMEx+vrtm48Qup6ns1Eg6HfX6/+bXCFGD3kPbh91WWlX2WLdGpqCwr+6w9P3ov8LIiX/Pcwm3hcNjXW22vRlrbYjXAd4BDVqHz8KJF90SyqDct9rx57RHH+r7Amyj3tJ52lvZW1+MZWbm+aYpROQhccIwzZVl56bGsq82AtaFt41y8vwJ+wbujKjj3neR8jzviU54G8lTksSvFBMDSYHGroJVAvifmme75LkZWr2u+W5FvA2+PH+57IVciM2XsiLz1wLuiTK9taCpKznUxIoYfAaCyKlvviYshEAi4gqwC8JBHk3OdRmpD4WGK3gecGimf7sixxoxpH+HbDvxbhPuTp+NOI0psBpAnym+DwWDscojMBDsQiAK7gHw3VjA9EU8eWncCqOgrOdbWf1T2AIjINxOhJCNya7zG91audfUXFe3QqLcmYlZS/nqAUXqmzym3NtT8XUVDgIqYiqqK4pdyUZcgOsI66m9zABmTiCUPrWHAuUyeD0UbgOuA61W9UK7qEsSfEz1P0q4z2YhHmkXklU6y8Dag0G5sLOirkYipAI4DH6NU5KougR0O54MM4vPzgC7PyClg8qBI/hjgw3QX6hjDY9LVZKMuQeEZb5wHgH6ciH1+R0QOAXhivp7pBS8Xqu7t8X/SuXBMHloHABTuyqmqgaAyAwCR1xOhTiNWQWwPcBb0wfgYvDKpr/+dX+FeIGJ8519NxDuNPF5aeg6lBRhVcDr2wOUQmQnnCtoeAq4B3Zm8a+0y3Xpi6oif/ixPtaW8nNj2PguVGgBBnk3OdTHy02DxYYEWYNLRNnd+DjVmhH/0ifnAV1T5fffTyB4vwJhxlgBnFW/tqvXbJuRKZF+sbWi6CaQWiBrDT7rnexhZVl56DJXHQQaJejvsxsbhOVGaBrt+y1BXZDswGNXlVRUl73av6XVJUj1/doOIbARu8Uf9LU9t2jQ422JTUVcXLswvMNuB21DZFTn14VO91aVcW43QTxcALwNFzgVr79OhrV/MktaU2PVbhkYHO7tFma7wRsT1zbZt2+utNqWRYDAYGxwZfr8gO4BpUdi/KtQ8LWuqu1G7fustfr85qPAtVPZH8yPT053/9nmIHQ6Hfa1tzhpgCeACdnWwZOUl1NwF295nFYw++ZjCz4ECVcJR1yq7qEPsZGobmr6nIjuBf1UHS750sYK7Y9u2Kbj2poCqPAFMAM6BVlUH5zzbV1vouvpNi+SZv6ijIDLgz2O98eTzm27M86yHFYKqfDnembQ4ElvcnwPCjI2ow93xP96h3vK1oaYaREbh6Vuu4W3j8FHVgpLTyR9p6jaER8Ycd6xnvImKTBOlCI/bOwo8VHYZn7uysnzu/kx19d+I6BwUMNKSHI9/mDnxjCKLUEAEo4APatc3szq09Szx3efQiOvEB7NK55gWeFORnY6JbbqYI9qMjKxYF74OdWYAf4/8829/SMTX/GrzRM93MgRyF3AKZYkIN6hwG57ciOgw4vtqH/AJ6H9E5CNFWtXzDvryzP7KstknBiq+30Z8xq0CLFTW2LbtrXohfI3EYtUe8kMgD3jfuO6sXH4I6k6fs9bKddsmG+MdBqKqLBcjRajOBBJ7li0Rx1rQ1/SYbdIa6XiHvEbHKWQSirJPDb+oqSj5Y/bkZU7aoXX0v85ChJuB4wKfIBzxlNct1d1L589Je0Bxlf93/gcvTcBNJAb2mgAAAABJRU5ErkJggg==">
+                                    Support
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__main__right">
+                <div class="header__main__right__button">
+                    <a href="#" class="header__main__right__button__link">
+                        Registration
+                    </a>
+                    <a href="#" class="header__main__right__button__link header__main__right__button__link__login">
+                        Log in
+                    </a>
+                </div>
+            </div>
+            <div class="header__main__right__mob">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="header__main__right__mob__menu" style="display: none">
+                <div class="sidebar__header-close">
+                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                         style="enable-background:new 0 0 512 512;" xml:space="preserve"><path id="ic_close_24px" d="M512,51.5L460.5,0L256,204.5L51.5,0L0,51.5L204.5,256L0,460.5L51.5,512L256,307.5L460.5,512l51.5-51.5 L307.5,256L512,51.5z"></path>
+                </svg>
+                </div>
+                <div class="header__main__right__button">
+                    <a href="#" class="header__main__right__button__link">
+                        Registration
+                    </a>
+                    <a href="#" class="header__main__right__button__link header__main__right__button__link__login">
+                        Log in
+                    </a>
+                </div>
+                <nav class="header__main__left__menu__nav">
+                    <ul class="header__main__left__menu__nav__list">
+                        <li class="header__main__left__menu__nav__list__inner">
+                            <a href="#" class="header__main__left__menu__nav__list__inner__link">
+                                <img src="data:image/png;base64,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">
+                                Games
+                            </a>
+                        </li>
+                        <li class="header__main__left__menu__nav__list__inner">
+                            <a href="#" class="header__main__left__menu__nav__list__inner__link">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAADEklEQVRIie3WT2gcVRzA8e9vdmY3gpGkgiCxp1bEW0CoEloPigf/VOvBaLYFWSs7CfRilWa3Ksyhzc4i7cVqOlPbQUh2axSsBoyIeLEKFlpvgm1PEit4SFMU3dnsvp+H7IptlmR27Un7u8yf9/u9z7yZeW8GbsV/PaTbgqPvzW2Km415wBTd7I5eYaub5PLJk/0101gARoDt6+VOhTNPeXNz6X8Ne1HUZ1ZuOyPKto1y/aCyXdT6pO9q47tD71Q39wwHQeBk6pkPEB5Jki9G68BlheGUrd90wjeEPc+zlrQ/Ap5OgnpR1Dc5sftcnI4fRPka2Gzb+umNt31dWFUlffd9xxB2J0HLJ07fn6lnLvvHKzu9XG5ZxN4JXFQYzlxtFhPDpbA6JehEEhRAm82XgCEVPvbD048X3NFrAntbrftL784OroH9oPpkKagsloKKts8JFJKiAJNu9gBwGEihpjJ17P07C272LPAlcAcpnlsDK3ocGOoGaseh6bkhP6iUwzC0C/mxN0G/UBiQtJNf7ZuZ1ZFYT6yBgXt6QQFS0nhb4cAS/SURUUgdaYG7AGzVbwFQHe4E9xwiHG3tvgigK/H5VYitAPYfzmKr/a6bChtLul56b86Im/pKazcCECfzAIDAJYDa7aa9gPzaCV6kx7Ac2afgb+K311VVVMxrLfjM6rY50jr+vl1j/33VYuVVTUgPL9nk3rErQFFVxQ+qh0V4TGA5nbJDAFH2KGBEPlsDF/IvLADXrakKfjdz2Q+rbyG8CjRVGdv/8ujS1InqDjX6KHCt7tQ+bOeu+4yL+bGDikwnhVXNKeCKKM8Wx7Ofe1E0IIZTrdYjXi63nAgWEa3/8uM+lNkk8MHxPT/E6XhLYTw770XRQKaemQfdKuiFeNApX9d3kg6DIHCW6P+IG75QRTfbsb48PbvNWDID3Av6U9M4I29MjP78z5xE08l13ZU4HT+P8lWSfLUkDWwR9EInNDEM4OVyNcv5c5cK5zbKLbjZsyrmmUF+f6gTCj3+7NVMY0EMcXE8+3C39bfi/xN/Aa4UKDz8Ta4rAAAAAElFTkSuQmCC">
+                                Promos
+                            </a>
+                        </li>
+                        <li class="header__main__left__menu__nav__list__inner">
+                            <a href="#" class="header__main__left__menu__nav__list__inner__link">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAB/ElEQVRIie2Vv2sTcRjGP+/XSNpksM3aQaHF3cWhCG6CRqxQPEiCjom1WpxsLwp1kJ7TjUpKoTq0gUyJVNF/QLCL7jopFIdGwYgQ8+N1uEt7SS6NQ12kz/S+7z3v87zv93vcwRGGQDqBU9jUwxS2c2kBMIHaz0PU/9EJIoHiDnBaVZP5m5lXzmqxjOqMiszks6kXYSorq8UrolpBpGJnU1cfF4pJRbd8LXo20HcARuS8l2rVf3Bi0Jim3R4LchX1eoXtPgNVyh6JzMP19RGg6olwcpABRk75UdV1S6NA2kul3GcwlTheAfkETER/R++ov6aKDjRQ9cwVdurx5m1gAvg4OXZs70j3DCzLaqliexuSN8quH08O3ACmAIyyK5D3THXJsqxWhyC9HU5hcwtIAm+BadBf8fp4YmHhUj3Ic93SaD3e/AaM7HN5aefSl4O84GvqO0ZuATW/AZBYLfp9upfXiDXP+eL43FqrKXO9vD6DpZz1WWCl29Rc6+W1hNlgrvDowXzqy1ADANOMPOs20BvOk43xTu6ulRKCXu8yMDwP04qEFe/NW1/x78cpbLwBuYCRZeAuQL3VWAaJAa/tXPpimMb+cEPgPC2eweh2yDCNtujZ+9nMh4P6Q48oCHsu9V6VxZDZFoeJ/x848A7+9h/R+faHYegdHOGf4w8nMqRBdiqMOAAAAABJRU5ErkJggg==">
+                                Tournaments
+                            </a>
+                        </li>
+                        <li class="header__main__left__menu__nav__list__inner">
+                            <a href="#" class="header__main__left__menu__nav__list__inner__link">
+                                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 512 512"
+                                     style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <path fill="currentColor"
+                                              d="M255.9-0.4c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S397.3-0.4,255.9-0.4z M140.3,383.3 c3.4-13.2,17.5-24.4,28.6-31.5l7.5-4.5c13-7.3,27.2-12.7,42.1-16.1c14.6-3.3,26.2-3.8,31.8-3.8c2.2,0,3.4,0.1,3.5,0.1l0.9,0.1 l0.1,0l0.1,0l0.9-0.1l0,0c0.3,0,1.5-0.1,3.4-0.1c5.5,0,16.8,0.5,31.2,3.8c16.4,3.8,32,10.1,46.2,18.7l6.7,4.3 c13.4,9.2,22,19,24.7,28.3c1.1,3.6,1,6.4,0.8,7.9c-0.4,0.1-0.9,0.2-1.7,0.2c-1.9,0-6.1-0.5-13.3-4.2l-8.3-4.4 c-27.2-14.6-53-28.3-89.5-28.3c-35.3,0-64.1,13.4-88.3,25.9l-12.1,6.3c-7.3,3.9-11.8,4.7-14.2,4.7c-0.8,0-1.3-0.1-1.7-0.2 C139.6,389,139.5,386.6,140.3,383.3z M140.2,345.1c0.1-0.5,0.2-0.9,0.3-1.4c1.5-6.3,5.9-11.5,11.9-14.2c2.6-1.1,5.6-1.7,9-1.7 c1,0,2.1,0.1,3.2,0.2l0.1,0l-2.8,1.6l-0.1,0.1c-1.9,1.1-3.4,2.1-4.9,3C150.6,336.6,145,340.8,140.2,345.1z M332,309.9 c-0.4,0.1-0.8,0.2-1.1,0.4c-5.5,1.8-10.1,3.9-13.3,5.5c-26.9-9.9-49.8-11-58.4-11c-2.1,0-3.7,0.1-4.4,0.1c-0.8,0-2.3-0.1-4.5-0.1 c-8.1,0-29.7,0.9-55.1,9.6c-3.3-1.7-8.2-4-14.1-5.9c-0.3-0.1-0.6-0.2-0.9-0.3c-0.2-16.8-0.5-35.1-0.8-52.7l0-0.4l0-0.1 c-0.5-29.9-1-58.2-1-81.6c0-33.5,5.4-55.2,17-68.3c11.6-13.1,31-19.3,61.2-19.3c21.4,0,43.1,1.9,56.7,15.5 c13.2,13.3,19.5,37.6,19.2,74.3l-0.1,13.1C331.8,236.2,331.4,273.9,332,309.9z M347.2,329.9l0.7-0.1c0.9-0.1,1.8-0.1,2.7-0.1 c3.4,0,6.5,0.6,9.1,1.7c6,2.7,10.4,7.8,11.9,14.2c0.2,1,0.4,1.9,0.5,2.9c-5.6-5.5-12.4-10.8-20.3-15.8L347.2,329.9z M310.4,389.6 c-1.6,0.5-3.1,0.9-4.8,1.3c-11.1,2.9-29,6.3-50.8,6.3c-19,0-37.6-4.8-51.1-9.4c24.4-10,40.1-11.4,52.4-11.4 C278,376.4,295.7,382.8,310.4,389.6z M165.6,454.5c6.6-22.9,10.3-41.9,12.1-52.5c13.6,6.2,44,17.9,77.1,17.9 c24.3,0,44.1-3.8,56.5-7c9.6-2.5,18.3-5.5,24.8-8.6c0.1,1.6,0.2,3.1,0.3,4.7c1.2,15.9,3.7,30.9,7.5,45.8c0.2,0.7,0.3,1.5,0.3,2.2 c-27.1,11.9-57,18.6-88.5,18.6c-32.3,0-63-7-90.6-19.5C165.4,455.5,165.5,455,165.6,454.5z M365.3,446.4c-2.7-11-4.6-22.2-5.7-33.9 c2.6,0.5,5.2,0.8,7.6,0.8c13.2,0,20.3-8,22.3-12.8c0.5-1.2,5-12.2-0.9-27.8c5.9-9.6,7.7-21.4,5-32.5c-3.2-13.2-12.2-24-24.8-29.6 c-4.3-1.9-9.1-3.1-14.2-3.5c-0.5-35.3-0.2-72,0.3-118.2l0-0.1l0.1-13c0.4-43-8-72.6-25.7-90.4c-19.4-19.6-46.4-22.3-72.8-22.3 c-37.2,0-62,8.6-78.2,27c-15.4,17.5-22.6,44-22.6,83.3c0,23.7,0.5,52.1,1,82.1l0,0.1c0.3,16.5,0.6,33.6,0.8,49.7 c-5.1,0.4-10,1.6-14.4,3.5c-12.5,5.5-21.6,16.3-24.8,29.6c-2.5,10.2-1.2,20.7,3.5,29.9c-8.6,17.9-3.4,30.9-2.8,32.4 c2.1,4.7,9.1,12.8,22.3,12.8c3.6,0,7.4-0.6,11.4-1.8c-1.8,8.7-4.4,20.4-8.2,33.7c-65-38.3-108.8-109-108.8-189.7 c0-121.3,98.7-220,220-220s220,98.7,220,220C475.9,337.1,431.3,408.4,365.3,446.4z"></path>
+                                        <ellipse fill="currentColor" cx="230.1" cy="258.7" rx="11.3"
+                                                 ry="25.7"></ellipse>
+                                        <ellipse fill="currentColor" cx="280.1" cy="258.7" rx="11.3"
+                                                 ry="25.7"></ellipse>
+                                    </g>
+                                </svg>
+                                Coins
+                            </a>
+                        </li>
+                        <li class="header__main__left__menu__nav__list__inner">
+                            <a href="#" class="header__main__left__menu__nav__list__inner__link">
+                                <img src="data:image/png;base64,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">
+                                Support
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="slider">
+    <div class="layout-bg__wrapper" style="--background-height:601px;">
+        <div class="layout-bg">
+            <div class="layout-bg__wave"></div>
+            <div class="layout-bg__wave layout-bg__wave_2"></div>
+            <div class="layout-bg__circle layout-bg__circle_1"></div>
+            <div class="layout-bg__circle layout-bg__circle_2"></div>
+        </div>
+    </div>
+    <div class="block-container">
+        <div class="block-container__content">
+            <div class="category-page__header">
+                <h1 class="category-page__title">
+                    {{ content.h1Tag }}
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="block-container__content">
+        <div class="home-page__row-one">
+            <div class="lobby-games home-page__games">
+                <div class="lobby-games__category">
+                    <section class="lobby-games__slider games-slider">
+                        <header class="games-slider__header"><!---->
+                            <div class="fe-title games-slider__title fe-title_primary fe-title_default">
+                                <h2 class="fe-title__main" style="color: #ffffff;"> Quack-lity mark </h2>
+                            </div>
+                            <span class="games-slider__divider"></span>
+                            <a href="#" class="fe-link games-slider__link fe-link_theme-primary">
+                                View all
+                            </a>
+                            <div class="games-slider__nav" style="display: none;">
+                                <button class="fe-button-arrow fe-button-arrow_primary fe-button-arrow_right fe-button-arrow_joined-right">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAABU0lEQVRoge2Yr07DUBSHvztIcHVVc2tCDWrtA1ShkRPAAuGxYAkEkiVTWNQeYKnCYab6AlVLgINhCRkbZufcIs6XVFzzu+drT3P/gOM4juM4zr+h9/1EIyhm9YqimIjIUZIkF/P5/F0xeycHSjm9oigmwDiEcLJarY7zPH9eLpefSvm7J9YIKcvyFhivxyGEUdu2d1r5f6E1wQuw2TKXw+HwqaqqQ6U5tqLSQk3TvPb7/TfgjB8vJUY7af0DnUmoCUA3EqoCEF9CXQDiSpgIQDwJMwGII2EqAPYSMTdeW/ddaZqKeqgmZVmOROSRja8tItMsy85ns9nHPvmmAtbFg6FAjOLBSCBW8WAgELN4UBaIXTwoCnRRPCgJdFU8gNZp6ZTfq/pDXddXdV2bnotVVuLFYnED3K/HIjIdDAbXgPmh3uRaxbptLIl+seU4juM4jrMHX/kD/MTPakMjAAAAAElFTkSuQmCC"
+                                         onclick="plusSlides(1)">
+                                </button>
+                            </div>
+                        </header>
+                        <div class="games-slider__container">
+                            <div class="games-slider__scroller">
+                                <div class="games-slider__item games-slider__item_tall">
+                                    <a href="#" class="game-item game-item_tall">
+                                        <img src="../game/creat27.png" alt="Great 27"
+                                             class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                        <div class="game-item__badges">
+                                            <div class="fe-badge fe-badge--secondary">
+                                                <div class="fe-badge__text"> Jackpot</div>
+                                                <div class="fe-badge__background"></div>
+                                                <div class="fe-badge__shadow"></div>
+                                                <div class="fe-badge__band fe-badge__band--left"></div>
+                                                <div class="fe-badge__band fe-badge__band--right"></div>
+                                            </div>
+                                        </div>
+                                        <div class="game-item__overlay">
+                                            <div class="game-item__btn"> Play</div>
+                                            <div class="game-item__btn-link"> Demo</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="games-slider__item games-slider__item_tall">
+                                    <a href="#" class="game-item game-item_tall">
+                                        <img src="../game/bookofdead.png" alt="Book of Dead"
+                                             class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                        <div class="game-item__badges"></div>
+                                        <div class="game-item__overlay">
+                                            <div class="game-item__btn"> Play</div>
+                                            <div class="game-item__btn-link"> Demo</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="games-slider__item games-slider__item_tall">
+                                    <a href="#" class="game-item game-item_tall">
+                                        <img src="../game/hothine.jpeg" alt="Hotline 2"
+                                             class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                        <div class="game-item__badges"></div>
+                                        <div class="game-item__overlay">
+                                            <div class="game-item__btn"> Play</div>
+                                            <div class="game-item__btn-link"> Demo</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="games-slider__item games-slider__item_tall">
+                                    <a href="#" class="game-item game-item_tall">
+                                        <img src="../game/deadAlive.png" alt="Dead or Alive 2"
+                                             class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                        <div class="game-item__badges"></div>
+                                        <div class="game-item__overlay">
+                                            <div class="game-item__btn"> Play</div>
+                                            <div class="game-item__btn-link"> Demo</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="games-slider__item games-slider__item_tall">
+                                    <a href="#" class="game-item game-item_tall">
+                                        <img src="../game/LuckyLady.jpeg" alt="Lucky Lady Moon"
+                                             class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                        <div class="game-item__badges">
+                                            <div class="fe-badge fe-badge--primary">
+                                                <div class="fe-badge__text"> Top</div>
+                                                <div class="fe-badge__background"></div>
+                                                <div class="fe-badge__shadow"></div>
+                                                <div class="fe-badge__band fe-badge__band--left"></div>
+                                                <div class="fe-badge__band fe-badge__band--right"></div>
+                                            </div>
+                                        </div>
+                                        <div class="game-item__overlay">
+                                            <div class="game-item__btn"> Play</div>
+                                            <div class="game-item__btn-link"> Demo</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="games-slider__item games-slider__item_tall">
+                                    <a href="#" class="game-item game-item_tall">
+                                        <img src="../game/pinkElephants.jpeg" alt="Pink Elephants 2"
+                                             class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                        <div class="game-item__badges">
+                                            <div class="fe-badge fe-badge--primary">
+                                                <div class="fe-badge__text"> Top</div>
+                                                <div class="fe-badge__background"></div>
+                                                <div class="fe-badge__shadow"></div>
+                                                <div class="fe-badge__band fe-badge__band--left"></div>
+                                                <div class="fe-badge__band fe-badge__band--right"></div>
+                                            </div>
+                                        </div>
+                                        <div class="game-item__overlay">
+                                            <div class="game-item__btn"> Play</div>
+                                            <div class="game-item__btn-link"> Demo</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="home-page__promo block-container block-container_no-padding">
+    <div class="container">
+        <div class="home-page__row">
+            <div class="lobby-games home-page__games">
+                <div class="lobby-games__category">
+                    <div class="category-games-list">
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/billysGame.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/blueDolphin.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/bookOfFortune.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/casanova.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/bookofPharao.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/blackJack.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/bookOfQueen.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/aztecEmerald.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--                -->
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/allWaysHotFruits.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/beautyFairy.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/bookOfFruits10.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/hotBellsonFire.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/aloha.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/casanovasLodies.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/bookOfFruits.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/aztecSecret.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/bookOfLords.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/RouletteRoyal.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/bellsOnFireRombo.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/casanova.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+<!--                        -->
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/bookOfAztec.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/billyonaire.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/deucesWild.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/crystalRoses.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-games-list__items">
+                            <div class="category-games-list__item category-games-list__item_static">
+                                <a href="#" class="game-item">
+                                    <img src="../gameAll/arisingPhoenix.jpeg" alt="Dr. Toonz"
+                                         class="game-item__thumb v-lazy-image v-lazy-image-loaded">
+                                    <div class="game-item__badges">
+                                        <div class="fe-badge fe-badge--primary">
+                                            <div class="fe-badge__text"> Top</div>
+                                            <div class="fe-badge__background"></div>
+                                            <div class="fe-badge__shadow"></div>
+                                            <div class="fe-badge__band fe-badge__band--left"></div>
+                                            <div class="fe-badge__band fe-badge__band--right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="game-item__overlay">
+                                        <div class="game-item__btn"> Play</div>
+                                        <div class="game-item__btn-link"> Demo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="winners home-page__winners">
+                <div class="winners__wrapper">
+                    <div class="fe-title winners__title fe-title_primary fe-title_default">
+                        <h2 class="fe-title__main">
+                            Real-time winnings
+                        </h2>
+                    </div>
+                    <div class="winners__list">
+                        <a href="#" class="winners__item" style="">
+                    <span class="winners__item-thumb">
+                        <img src="../game/1.jpeg" alt="Dazzle Me"
+                             class="winners__item-thumb-img v-lazy-image v-lazy-image-loaded">
+                    </span>
+                            <div class="winners__item-info">
+                                <div class="winners__item-name">plstart***</div>
+                                <div class="winners__item-amount">216 EUR</div>
+                            </div>
+                        </a>
+                        <a href="#" class="winners__item" style="">
+                    <span class="winners__item-thumb">
+                        <img src="../game/1.jpeg" alt="Sticky Bandits"
+                             class="winners__item-thumb-img v-lazy-image v-lazy-image-loaded">
+                    </span>
+                            <div class="winners__item-info">
+                                <div class="winners__item-name">superst***</div>
+                                <div class="winners__item-amount">111 EUR</div>
+                            </div>
+                        </a>
+                        <a href="#" class="winners__item" style="">
+                    <span class="winners__item-thumb">
+                        <img src="../game/1.jpeg" alt="Hotline"
+                             class="winners__item-thumb-img v-lazy-image v-lazy-image-loaded">
+                    </span>
+                            <div class="winners__item-info">
+                                <div class="winners__item-name">imortal***</div>
+                                <div class="winners__item-amount">576 EUR</div>
+                            </div>
+                        </a>
+                        <a href="#" class="winners__item" style="">
+                    <span class="winners__item-thumb">
+                        <img src="../game/1.jpeg"
+                             alt="Odin´s Gamble Mímirs Well"
+                             class="winners__item-thumb-img v-lazy-image v-lazy-image-loaded">
+                    </span>
+                            <div class="winners__item-info">
+                                <div class="winners__item-name">imortal***</div>
+                                <div class="winners__item-amount">1800 EUR</div>
+                            </div>
+                        </a>
+                        <a href="#" class="winners__item" style="">
+                    <span class="winners__item-thumb">
+                        <img src="../game/1.jpeg" alt="Sticky Bandits"
+                             class="winners__item-thumb-img v-lazy-image v-lazy-image-loaded">
+                    </span>
+                            <div class="winners__item-info">
+                                <div class="winners__item-name">superst***</div>
+                                <div class="winners__item-amount">390 EUR</div>
+                            </div>
+                        </a>
+                        <a href="#" class="winners__item" style="">
+                    <span class="winners__item-thumb">
+                        <img src="../game/4.jpeg" alt="Legacy of Dead"
+                             class="winners__item-thumb-img v-lazy-image v-lazy-image-loaded">
+                    </span>
+                            <div class="winners__item-info">
+                                <div class="winners__item-name">imortal***</div>
+                                <div class="winners__item-amount">420 EUR</div>
+                            </div>
+                        </a>
+                        <a href="#" class="winners__item" style="">
+                    <span class="winners__item-thumb">
+                        <img src="../game/4.jpeg" alt="Dazzle Me"
+                             class="winners__item-thumb-img v-lazy-image v-lazy-image-loaded">
+                    </span>
+                            <div class="winners__item-info">
+                                <div class="winners__item-name">plstart***</div>
+                                <div class="winners__item-amount">368 EUR</div>
+                            </div>
+                        </a>
+                        <a href="#" class="winners__item" style="">
+                    <span class="winners__item-thumb">
+                        <img src="../game/4.jpeg" alt="Legacy of Dead"
+                             class="winners__item-thumb-img v-lazy-image v-lazy-image-loaded">
+                    </span>
+                            <div class="winners__item-info">
+                                <div class="winners__item-name">imortal***</div>
+                                <div class="winners__item-amount">85 EUR</div>
+                            </div>
+                        </a>
+                        <a href="#" class="winners__item" style="">
+                    <span class="winners__item-thumb">
+                        <img src="../game/4.jpeg" alt="Legacy of Dead"
+                             class="winners__item-thumb-img v-lazy-image v-lazy-image-loaded">
+                    </span>
+                            <div class="winners__item-info">
+                                <div class="winners__item-name">imortal***</div>
+                                <div class="winners__item-amount">208 EUR</div>
+                            </div>
+                        </a>
+                        <a href="#" class="winners__item" style="">
+                    <span class="winners__item-thumb">
+                        <img src="../game/2.jpeg" alt="Legacy of Dead"
+                             class="winners__item-thumb-img v-lazy-image v-lazy-image-loaded">
+                    </span>
+                            <div class="winners__item-info">
+                                <div class="winners__item-name">imortal***</div>
+                                <div class="winners__item-amount">770 EUR</div>
+                            </div>
+                        </a>
+                        <a href="#" class="winners__item" style="">
+                    <span class="winners__item-thumb">
+                        <img src="../game/2.jpeg" alt="Sticky Bandits"
+                             class="winners__item-thumb-img v-lazy-image v-lazy-image-loaded">
+                    </span>
+                            <div class="winners__item-info">
+                                <div class="winners__item-name">superst***</div>
+                                <div class="winners__item-amount">512 EUR</div>
+                            </div>
+                        </a>
+                        <a href="#" class="winners__item" style="">
+                    <span class="winners__item-thumb">
+                        <img src="../game/3.jpeg" alt="Gonzo's Quest"
+                             class="winners__item-thumb-img v-lazy-image v-lazy-image-loaded">
+                    </span>
+                            <div class="winners__item-info">
+                                <div class="winners__item-name">plstart***</div>
+                                <div class="winners__item-amount">174 EUR</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<main class="main">
+    <div class="container">
+        <div class="main__information">
+            {{ content.content | raw }}
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer-menu__wrapper">
+        <ul class="footer-menu">
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Duck Casino Support
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Responsible Gaming
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Anti-Money Laundering Policy
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    KYC Policies
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Payment Policy
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Fairness &amp; RNG Testing Methods Policy
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Self-exclusion procedure
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Security
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Receiving winnings
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Dispute Resolution Policy
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Privacy &amp;Management of Personal Data Policy
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    FAQ
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Accounts, Payouts &amp; Bonuses Policy
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Verification in Duck Casino
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Terms of Service
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    About Us
+                </a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link">
+                    Contacts
+                </a>
+            </li>
+        </ul>
+        <div class="footer__box">
+            <div class="super-partners">
+                <a href="#">
+                    <img src="../icon/logo_super_partners.bf09ffb2923e0404071f15015a7b117e.svg"
+                         class="super-partners__image v-lazy-image v-lazy-image-loaded">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-payments">
+        <div class="footer-payments__wrapper">
+            <div class="footer-payments__caption">
+                We accept for payment:
+            </div>
+            <div class="footer-payments__list">
+                <a href="#" class="footer-payments__list-item">
+                    <img src="../icon/visa.32877035d9e088694ebb99399fe8bab8.svg" alt="visa"
+                         class="footer-payments__list-item-img v-lazy-image v-lazy-image-loaded">
+                </a>
+                <a href="#" class="footer-payments__list-item">
+                    <img src="../icon/visa-electron.43e324fc096288ffac289c8d6809e60c.svg" alt="visa-electron"
+                         class="footer-payments__list-item-img v-lazy-image v-lazy-image-loaded">
+                </a>
+                <a href="#" class="footer-payments__list-item">
+                    <img src="../icon/mastercard.5d8cfc2138d00c08b7920a025736054c.svg" alt="mastercard"
+                         class="footer-payments__list-item-img v-lazy-image v-lazy-image-loaded">
+                </a>
+                <a href="#" class="footer-payments__list-item">
+                    <img src="../icon/maestro.78eb8345d73712e356cbd4d2644004f8.svg" alt="maestro"
+                         class="footer-payments__list-item-img v-lazy-image v-lazy-image-loaded">
+                </a>
+                <a href="#" class="footer-payments__list-item">
+                    <img src="../icon/bitcoin.3b065aa78fd6fd3a99b79562ebe519c4.svg" alt="bitcoin"
+                         class="footer-payments__list-item-img v-lazy-image v-lazy-image-loaded">
+                </a>
+                <a href="#" class="footer-payments__list-item">
+                    <img src="../icon/smart_cashew.43d0bcc078878a95d3e7fa63785f4546.svg" alt="smart сashew"
+                         class="footer-payments__list-item-img v-lazy-image v-lazy-image-loaded">
+                </a>
+                <a href="#" class="footer-payments__list-item">
+                    <img src="../icon/interac.4cd3ddbfc0d73df73ffe9345f585f160.svg" alt="interac"
+                         class="footer-payments__list-item-img v-lazy-image v-lazy-image-loaded">
+                </a>
+                <a href="#" class="footer-payments__list-item">
+                    <img src="../icon/ethereum.d27416653b94dd1132b9633831da9896.svg" alt="ethereum"
+                         class="footer-payments__list-item-img v-lazy-image v-lazy-image-loaded">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__contacts-custom">
+        <p class="footer__contacts-custom-text footer__contacts-custom-rights">
+            © 2021 All rights reserved.
+        </p>
+        <span class="footer__contacts-custom-text footer__contacts-custom-aside">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAEt0lEQVRoge2az29VRRTHPw+QdxsQeK9UujI2GpOKKV2agMjCH0XUVDf+ADcGgi4oiK5MxCj/AaaJCxO3utDEGCWAAvV3sf7ABaUFjBHF8CsmNNaHCNfFOZO573J/37ltF3yTyW1nznzPuXdmzpw58+AG5hZqDrmawFpgNXAXcDtwC7BI2/8GzgK/AMeAL4HPgb8c2lAYHvAssB+4Cvg5y3/APmATUJ9h2wHoAF4CzgSMagEHgVeBQaAXaAA3aWlo3SCwCzikfUz/P4CdyMeZEWwATgUM+A7YDCwtwLUM2AKMBfhOAuudWBoDD3groPB74EGH/APAjwH+YSoYnW7EcB9ZtNuA+a6VKOd2YBo72itckfcgw+0D48DdrogT0AdMqM4TakMpdAUIjwDLyxLmQANx0T6yJruLEnnY6fQ1dj+YSSwCvsVOs0JrxizscWSzmy10YmfFcN7OG7ALeybWRBr6sA5gIGunDuw+sa0auwphB3bxZ5piL2P3iSpcbFEsAH5CbNuRJlxHQgUfeKBauwrhYcS2M6SMyiash5iLqGE96TNJgvtVaHNG4heBAxH1i4HXgePAP0ioPgoMIVOkDLaqjXvjBJpIWN0iWwC4BPhTSYPwEKN9YAoYQfahf7XuI8qdgxrAZeBKnJ2DquhgCtE84D7gG2yAF4RxFkdUqUEfcF7bHstn+3U4HOaZF2hco89DCQTjwCUluidGZp0+d9N++vsZeCckUxSH9WlsbpuvvQGFcfhdi8H9ETJmhKKOsFP6bCXoMP2Tpt9RffZGNU4qSWRjgtLw1HpB694O1deRj3SNwJfMyBnGSpU5HtV4QRs7U0jSlM4H3tX6D4DnEC9ogr/dBTjDWK4y56MaL2vjwhSSLEpXYz1asJxCHEUcT1wJo47NE1wHVy/yOOIaW0i0+iSwEXhPZa8CT1X5Ii6mVgeSu/IRdx7GLm27oLJZOKOQOLVcLPY1+v8PMfIedi+JW/CFFntwH5nU550pJEkwp8jfYtpbwGn9u0yGxNhobG57EfN2q0oomNBnP9ExVTd2xE/EcNRID2GMjZHu14QoSTt7GFHT4FOte5P2ddCJDUo/y6EjCiPK82hUYwMbNC7LSBj1Ij3Ar1p/DvgQeB+4iD3h3ZrT8CCa2KBxSZzQPlW2JSPpAaLD+AbwBpI5nELiszHglSTlGfG82vhJktBGFRorqawq1BCP6ANPJwnWkaDQBx6q3q7ceASx7TQZriF2YveCuZZ8OIrYNpSlg4fN9W6vzq7cMB94ghyXQuu10zRysptt9CNnf58CVxnD2C+QJ/5yjS7EZfvAniIEHpIW8pGzxGwksRdjExmjlLhn7ELCAJNM6HJhXUY0ga+w13GlL3x6sEM7QblYLCv6AzongdtcEa/ATrNpJPdaNtEWhQWIdzILexS5q3cKD+sAfCSh7Or2tYZcZZh9wizsSu/eB7DDbrL2W2lPxmVFE4mdTNhhppLL2+JEeMj0MuGMj0SkI8BryLl9JeK2F2rpRC6NnlCZEWyewIQdQ8zSLyDqSFZ8L3IESEsihMsV4GMkACz1Ai5/VLMU+VHNvcgp8A7EXd+s7VPI+eQk4tK/QEblkkMbbmDO4H9EMIgHDIvf9QAAAABJRU5ErkJggg=="/>
+             Only for players over 18 years old
+        </span>
+    </div>
+</footer>
+
+<script>
+    let buttonMenu = document.querySelector('.header__main__right__mob');
+    let buttonClose = document.querySelector('.sidebar__header-close');
+    buttonMenu.addEventListener('click', () => {
+        let menuMob = document.querySelector('.header__main__right__mob__menu');
+        if(menuMob.style.display !== 'block') {
+            menuMob.style.display = 'block';
+        }
+    });
+    buttonClose.addEventListener('click', () => {
+        let menuMob = document.querySelector('.header__main__right__mob__menu');
+        if(menuMob.style.display === 'block') {
+            menuMob.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>
